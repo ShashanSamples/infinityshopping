@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    background-color: #101e41;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.dropdown-content a{
+    display: block;
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+   padding: 20px 15px;
+   transition: all 0.4s;
+   padding: 30px 34px;
+
+}
+.navbar h2{
+    color: aliceblue;
+    margin-left: 15px;
+}
+.navbar h2 span{
+    color: blue;
+}
+.dropdown-content {
+   position: absolute;
+   display: none;
+   background-color: black;
+   z-index: 1;
+   margin-top: 7px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+   font-size: 13px;
+   min-width: 100px;
+   border-top: 1px solid white;
+   margin-right: 20px;
+}
+.list{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+   
+}
+
+
+.list1:hover .dropdown-content{
+    display: block;
+    animation-name: example;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    
+}
+@keyframes example{
+    0%{top: 37.4px;}
+    25%{top:36.4px;}
+    50%{top: 35.4px;}
+    75%{top: 34.4px;}
+    100%{top:33.4px;}
+}
+
+.navbar a:hover{
+    background-color: #68e715;
+}
+.list1:hover .fa{
+    transform: rotateX(180deg);
+}
+.dropdown-content-2 a{
+    display: block;
+    
+}
+.dropdown-content-2{
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+    margin-top: 7px;
+    font-size: 13px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    min-width: 100px;
+    border-top: 1px solid white;
+    margin-left: 5px;
+}
+.list2:hover .dropdown-content-2{
+    display: block;
+    animation-name: example;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+i.fa.fa-caret-down {
+    margin-left: 10px;
+}
+.list2:hover .fa{
+    transform: rotateX(180deg);
+}
+.inside-list {
+    position: absolute;
+    right: -54px;
+    background-color: black;
+    top: 28px;
+    min-height: 98px;
+    display: none;
+    border-top: 1px solid white;
+    border-left:1px solid white ;
+}
+.list3:hover .inside-list{
+    display: block;
+    animation-name: example;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+.list3 .fa-caret-right {
+    padding-left: 23px;
+    
+}
+.list3:hover .fa-caret-right{
+    transform: rotateX(180deg);
+}
+.my-animation{
+    position: relative;
+    margin-top: 50px;
+    background-color: aqua;
+    color: brown;
+    border-radius: 20px;
+    z-index: -1;
+   
+    
+    
+}
+.my-animation h4{
+    position: relative;
+    animation: mymove 10s infinite reverse ;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mymove{
+    from{left: 0%;}
+    to{left: 100%;}
+}
+.main-image img {
+    width: 48%;
+    height: 82%;
+    box-shadow: 0px 16px 16px 0px rgb(0 0 0 / 40%);
+    border-radius: 50% 0px 50% 0px;
+    margin-left: 286px;
+    margin-top: 55px;
+}
+.main-image{
+    background-color: #101e41;
+    height: 700px;
+}
+.hero-area h1 {
+    margin-left: 135px;
+    color: aliceblue;
+    font-size: 3em;
+}
+.hero-area{
+    background-color: #101e41;
+    display: flex;
+    align-items: center;
+    
+}
+.img1{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    left: -275px;
+}
+.img2{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    left: -450px;
+ 
+    
+}   
+.img3{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    left: -625px;
+ 
+    
+} 
+.img4{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 12s;
+    left: -800px;
+ 
+    
+} 
+.img5{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 16s;
+    left: -975px;
+ 
+    
+} 
+.img6{
+    position: relative;
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+    left: -1150px;
+ 
+    
+} 
+
+
+@keyframes animation1{
+    0%{left: -30px ;}
+    
+    100%{left: 110%;}
+}
+@keyframes animation{
+    0%{left: -1010px ;}
+    
+    100%{left: 1200px;}
+}
+.imgaes{
+    
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: inherit;
+}
+.imgaes img{
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.sign-in {
+    height: 34em;
+    /* background-color: #112045; */
+    background-image: linear-gradient(#112045,black);
+    color: antiquewhite;
+    /* border-radius: 20px; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.sign-in-information h1 {
+    padding-top: 6ex;
+    margin-left: 1em;
+    font-size: 50px;
+}
+.sign-in-information h1 span{
+    margin-left: 1em;
+}
+.cart img {
+    width: 400px;
+    height: 400px;
+    padding-top: 0.5em;
+    border-radius: 50%;
+    margin-top: 3em;
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+}
+.sign-in-information button{
+    margin-left: 12ex;
+    margin-top: 6ex;
+    
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #68e715;
+    font-size: large;
+    
+}
+
+
+.top-brand li {
+    /* display: inline-block; */
+    list-style: none;
+    color: black;
+}
+.top-brand ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px 10px 30px;
+}
+.top-brand a{
+    color: black;
+    text-decoration: none;
+}
+.top-brand ul li a img{
+    border: 5px solid #68e715;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+} 
+.top-brand ul li a h1 {
+    text-align: center;
+}
+.top-brand {
+    margin-bottom: 165px;
+    margin-top: 67px;
+}
+h1#top {
+    margin-top: 184px;
+    margin-bottom: 116px;
+}
+h1#top-brand {
+    text-align: center;
+    margin-top: 118px;
+}
+.logo img{
+    height: 78.95 ;
+    margin-left: 38px;
+}
+.signupbtn{
+    opacity: 0.8;
+}
+.signupbtn:hover{
+    opacity: 1;
+}
+.close{
+    color: aliceblue;
+}
+.signup-form {
+    display: none;
+    position: relative;
+    left: -1%;
+    top: 0%;
+    z-index: 1;
+    /* background-color: #060b17; */
+    height: 100%;
+    width: auto;
+    background-image: linear-gradient(#112045,black);
+    padding: 0px 0px 0px 195px;
+}
+input[type="text"],input[type="password"] {
+    width: 100%;
+}
+form.modal-content {
+    width: 40%;
+}
+.container h1 {
+    padding: 0% 0px 10% 0px;
+}
+.container p {
+    padding-bottom: 10px;
+}
+.container input{
+    padding: 2%;
+}
+.sign-in-information {
+    position: absolute;
+    left: 10%;
+}
+.clerfix button {
+    padding: 12px;
+}
+.container input {
+    padding: 3%;
+    margin: 4% 0;
+}
+.clerfix button {
+    width: 79.5px;
+    height: 44px;
+    margin-left: 32%;
+}
+.close {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+    position: relative;
+    left: 327px;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
